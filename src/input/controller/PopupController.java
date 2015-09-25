@@ -39,7 +39,7 @@ public class PopupController
 		}
 		else
 		{
-			myWeight = -.0000008;
+			myWeight = -999999999;
 		}
 		myPopups.showResponse("You typed " + myWeight);
 		
