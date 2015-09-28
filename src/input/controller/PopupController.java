@@ -32,7 +32,15 @@ public class PopupController
 		myPopups.showResponse("You typed " + myAge);
 		
 		String tempWeight = myPopups.grabAnswer("Type in your weight");
-		double myWeight = Double.parseDouble(tempWeight);
+		double myWeight;
+		if(isDouble(temp))
+		{
+			myWeight = Double.parseDouble(tempWeight);
+		}
+		else
+		{
+			myWeight = -9999999;
+		}
 		myPopups.showResponse("You typed " + myWeight);
 		
 		myTestThing = new Thingy(myName, myAge, myWeight);
