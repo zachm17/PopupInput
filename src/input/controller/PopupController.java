@@ -42,19 +42,14 @@ public class PopupController
 		double myWeight;
 		if(isDouble(temp))
 		{
-<<<<<<< HEAD
+
 			myWeight = Double.parseDouble(tempWeight);
 		}
-		else
-		{
-			myWeight = -9999.99;
-=======
-			myWeight = Double.parseDouble(temp);
-		}
+		
 		else
 		{
 			myWeight = -999999999;
->>>>>>> origin/master
+
 		}
 		myPopups.showResponse("You typed " + myWeight);
 		
